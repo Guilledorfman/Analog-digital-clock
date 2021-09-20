@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body id="body">
     <div class="cont">
         <div class="cont-anal">
-            <div class="reloj">
+            <div class="reloj" id="reloj">
                 <div class="centro"></div>
-                <div class="manecillas-hr" data-hour-hand>
-                    <div class="hr"></div>
+                <div class="manecillas-hr"  data-hour-hand>
+                    <div class="hr" id="hr"></div>
                 </div>
                 <div class="manecillas-min" data-minute-hand>
-                    <div class="min"></div>
+                    <div class="min" id="min"></div>
                 </div>
                 <div class="manecillas-seg" data-second-hand>
                     <div class="seg"></div>
@@ -67,6 +69,15 @@
                 <p class="digit-sep">:</p>
                 <p class="digit-seg"><b data-second-dig>00</b></p>
             </div>
+        </div>
+        <div class="dark-cont" id="darkmode">
+            <div class="slider" id="slider"></div>
+            <span class="material-icons-outlined">
+                light_mode
+                </span>
+                <span class="material-icons-outlined">
+                    dark_mode
+                    </span>
         </div>
     </div>
     <script src="script.js"></script>

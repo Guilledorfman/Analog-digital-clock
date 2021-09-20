@@ -9,6 +9,23 @@ const hourDig = document.querySelector('[data-hour-dig]');
 const minuteDig = document.querySelector('[data-minute-dig]');
 const secondDig = document.querySelector('[data-second-dig]');
 
+const indicator = document.querySelectorAll(".indicator");
+
+const darkMode = document.getElementById("darkmode");
+
+
+darkMode.addEventListener('click', ()=>{
+    document.getElementById("slider").classList.toggle("right")
+    document.getElementById("body").classList.toggle("dark")
+    document.getElementById("hr").classList.toggle("dark")
+    document.getElementById("min").classList.toggle("dark")
+    document.getElementById("reloj").classList.toggle("dark")
+    indicator.forEach(e=>e.classList.toggle("dark"))
+
+    darkMode.classList.toggle("dark");
+    
+})
+
 function setClock(){
 
 
